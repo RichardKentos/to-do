@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Modern';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Modern M Regular'), url('modern M.woff') format('woff');
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  background-image: url("./back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.to-do, 
+.done {
+  float: left;
+  display: block;
+  min-width: 400px;
+  margin: 5%;
+  padding: 3%;
+  font-size: 1.4rem;
+  background-color: #fc7b66;
+  border-radius: 40px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.to-do h1,
+.done h1 {
+  font-family: "Modern";
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.done {
+  background-color: #fc7b66;
+}
+
+
+.doneTodos {
+  display: inline;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+input[type=checkbox] {
+  margin: 2rem 2rem 0
+}
+
+
+.add {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.add input[type=text] {
+  font-size: 1.4rem;
+  height: 30px;
+  padding: 2%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 2rem;
+}
+
+.add input[type=submit] { 
+  background-color: #00687f;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Modern";
+  padding: 2%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  transition: .2s
+}
+
+.add input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #007f59;
+}
